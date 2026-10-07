@@ -13,10 +13,10 @@ public class StudiKasus210 {
         typeOfActivity = sc.nextLine().trim().toLowerCase();
         System.out.print("Number of Documents: ");
         numberOfDocuments = sc.nextInt();
-        System.out.print("Winner Rank: ");
-        winnerRank = sc.nextInt();
-
+        
         if (typeOfActivity.equals("belmawa") || typeOfActivity.equals("bakorma") || typeOfActivity.equals("mandiri")) {
+            System.out.print("Winner Rank: ");
+            winnerRank = sc.nextInt();
             if (winnerRank == 1 || winnerRank == 2 || winnerRank == 3) {
                 if (numberOfDocuments == 4) {
                     System.out.println("Status: Congratulations " + nama + ", You have received the award!");
