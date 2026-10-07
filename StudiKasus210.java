@@ -24,6 +24,18 @@ public class StudiKasus210 {
                     System.out.println("Incomplete documents (missing " + (4 - numberOfDocuments) + "). Award cannot be given.");
                 }
             }
+            } else if (typeOfActivity.equals("pkm")) {
+            System.out.print("PKM Funding Status (1 = funded, 0 = not funded): ");
+            pkmFundingStatus = sc.nextInt();
+            if (pkmFundingStatus == 1) {
+                if (numberOfDocuments == 4) {
+                    System.out.println("Congratulations " + nama + ", You have received the award!");
+                } else {
+                    System.out.println("Incomplete documents (missing " + (4 - numberOfDocuments) + "). Award cannot be given.");
+                }
+            } else {
+                System.out.println("PKM is not funded. Award cannot be given.");
+            }
         } else {
             System.out.println("Invalid activity type. Award cannot be given.");
         }
