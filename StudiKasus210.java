@@ -19,9 +19,9 @@ public class StudiKasus210 {
         if (typeOfActivity.equals("belmawa") || typeOfActivity.equals("bakorma") || typeOfActivity.equals("mandiri")) {
             if (winnerRank == 1 || winnerRank == 2 || winnerRank == 3) {
                 if (numberOfDocuments == 4) {
-                    System.out.println("Congratulations " + nama + ", You have received the award!");
+                    System.out.println("Status: Congratulations " + nama + ", You have received the award!");
                 } else {
-                    System.out.println("Incomplete documents (missing " + (4 - numberOfDocuments) + "). Award cannot be given.");
+                    System.out.println("Status: Incomplete documents (missing " + (4 - numberOfDocuments) + "). Award cannot be given.");
                 }
             }
             } else if (typeOfActivity.equals("pkm")) {
@@ -29,15 +29,15 @@ public class StudiKasus210 {
             pkmFundingStatus = sc.nextInt();
             if (pkmFundingStatus == 1) {
                 if (numberOfDocuments == 4) {
-                    System.out.println("Congratulations " + nama + ", You have received the award!");
+                    System.out.println("Status: Congratulations " + nama + ", You have received the award!");
                 } else {
-                    System.out.println("Incomplete documents (missing " + (4 - numberOfDocuments) + "). Award cannot be given.");
+                    System.out.println("Status: Incomplete documents (missing " + (4 - numberOfDocuments) + "). Award cannot be given.");
                 }
             } else {
-                System.out.println("PKM is not funded. Award cannot be given.");
+                System.out.println("Status: PKM is not funded. Award cannot be given.");
             }
         } else {
-            System.out.println("Invalid activity type. Award cannot be given.");
+            System.out.println("Status: Invalid activity type. Award cannot be given.");
         }
 
 
